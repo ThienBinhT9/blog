@@ -1,0 +1,20 @@
+.wrapper{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: center;
+
+    span{
+        padding: 0;
+        color: #B4B4B4B4;
+        font-size: 13px
+    }
+
+    .type{
+        color: #F1868A;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+}

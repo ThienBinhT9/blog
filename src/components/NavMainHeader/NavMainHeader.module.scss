@@ -1,0 +1,17 @@
+.wrapper{
+    height: var(--header-height);
+    border: var(--main-border);
+
+    @media (max-width:950px) {
+        display: none;
+    }
+}
+
+.maxscroll{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    z-index: 9999;
+}

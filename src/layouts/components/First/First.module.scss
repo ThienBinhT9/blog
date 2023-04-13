@@ -1,0 +1,176 @@
+.wrapper{
+    background-color: #0D0D0D;
+    height: var(--first-height);
+    color:#AAAAAA;
+    display: flex;
+    align-items: center;
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .latestPost{
+        display: flex;
+        flex: 1;
+
+        @media (max-width:760px) {
+            display: none;
+        }
+
+        span{
+            font-size: 11px;
+            margin-right: 10px;
+            letter-spacing: 1.2px;
+        }
+
+        .box-textLastPost{
+            position: relative;
+            display: inline-block;
+            flex: 1;
+            height: 12px;
+
+            .textLastPost{
+                position: absolute;
+                display: none;
+                opacity: 0;
+            }
+
+            .active{
+                display: inline-block;
+                opacity: 1;
+                animation: showText 1.2s ease-in;
+                cursor: pointer;
+                letter-spacing: 2px;
+                transition: 0.5s;
+
+                &:hover{
+                    color: var(--white);
+                    font-weight: bold;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+
+    .socials{
+        margin-right: -8px;
+    }
+
+}
+.menu-bars{
+    margin-right: 20px;
+    display: none;
+
+    @media (max-width:950px) {
+        display: inline-block;
+    }
+
+    .menu-bars__icon{
+        font-weight: bold;
+        color: var(--white);
+        cursor: pointer;
+    }
+
+    .NavBars{
+        display: flex;
+        flex-direction: column;
+
+        .logo{
+            width: 90%;
+            margin: 0 auto 55px auto;
+            
+            img{
+                width: 100%;
+            }
+        }
+
+        .headerNav{
+            display: flex;
+            align-items: center;
+            border-bottom: var(--main-border);
+            margin: 0 -12px 12px -12px;
+            padding-bottom: 4px;
+                
+            svg{
+                color: #0D0D0D;
+                padding: 4px 4px 4px 8px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            span{
+                color: #0D0D0D;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            p{
+                position: relative;
+                display: inline-block;
+                font-size: 11px;
+                color: #AAAAAA;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                padding: 0 5px;
+                pointer-events: none;
+                margin-left: 5px;
+
+                &::before{
+                    position: absolute;
+                    content:"";
+                    height: 16px;
+                    width: 1px;
+                    background-color: #ebebeb !important;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+        .NavBars__content{
+            overflow-y: scroll;
+            height: 60vh;
+            animation-duration: 0.5s;
+            animation-timing-function: ease;
+
+            .navItem{
+                padding: 14px 0 14px 3px;
+                border-bottom: var(--main-border);
+                transition: 0.7s;
+
+                &:hover{
+                    background-color: rgba(0, 0, 0, 0.02);
+                    transition: 0.7s;
+                }
+
+                span{
+                    color: #161616;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: 600;
+                    letter-spacing: 1.5px;
+                }
+
+                svg{
+                    font-size: 10px;
+                    font-weight: bold;
+                    padding: 4px 10px;
+                }
+            }
+        }
+    }
+
+    
+}
+
+@keyframes showText {
+    from{
+        opacity: 0.2;
+    }
+    to{
+        opacity: 1;
+    }
+}

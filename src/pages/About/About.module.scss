@@ -1,0 +1,52 @@
+.wrapper{
+    margin-top: 100px;
+
+    .content{
+
+        .img{
+            padding-top: 70%;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 42px;
+        }
+
+        .intro{
+      
+
+            h2{
+                letter-spacing: 2px;
+                margin-bottom: 42px;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 25px;
+                text-align: center;
+            }
+
+            p{
+                padding: 0 200px;
+                line-height: 2.2;
+                font-size: 16px;
+                color: #666666;
+                @media (max-width:1080px) {
+                    padding: 0;
+                }
+            }
+
+        }
+
+        .sign{
+            width: 150px;
+            margin:  32px 200px 0 auto;
+
+            @media (max-width:1080px) {
+                margin: 32px 0 0 auto;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    margin-bottom: 120px;
+}

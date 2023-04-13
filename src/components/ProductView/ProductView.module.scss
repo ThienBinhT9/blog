@@ -1,0 +1,264 @@
+.wrapper{
+    margin-top: 70px;
+    margin-bottom: 45px;
+
+    @media (max-width:600px) {
+        margin-top: 35px;
+        margin-bottom: 25px;
+    }
+
+    .imgs{
+
+        .img{
+            padding-top: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 20px;
+            cursor: pointer;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                content: "";
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(0,0,0,0.4);
+            }
+        }
+
+        .img.activeImg{
+
+            &::before{
+                content: none;
+            }
+        }
+    }
+
+    .img-main{
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 100%;
+        overflow: hidden;
+
+        @media (max-width:600px) {
+            height: 50vh;
+            overflow: hidden;
+            
+        }
+        
+        &::before{
+            position: absolute;
+            width: 82px;
+            height: 114px;
+            content: "";
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 98;
+            right: -39px;
+            bottom: -55px;
+            transform: rotate(47deg)
+        }
+
+        .countImg{
+            position: absolute;
+            padding: 8px;
+            z-index: 99;
+            bottom: 0;
+            right: 0;
+            color: #fff;
+        }
+
+        img{
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .info{
+
+        .title{
+            color: #161616;
+            font-size: 22px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+
+            @media (max-width:600px) {
+                margin-top: 12px;
+                margin-bottom: 16px;
+            }
+        }
+
+        .price{
+            color: #318892;
+            margin-bottom: 24px;
+            font-size: 21px;
+
+            @media (max-width:600px) {
+                margin-bottom: 12px;
+            }
+        }
+
+        .title-color,.title-size,.title-quantity,.title-price{
+            margin-bottom: 12px;
+
+            @media (max-width:600px) {
+                margin-bottom: 6px;
+            }
+        }
+
+        .colors{
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+
+            @media (max-width:600px) {
+                margin-bottom: 12px;
+            }
+
+            .color{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 2px solid #999;
+                margin-right: 12px;
+                cursor: pointer;
+            }
+
+            .color.activeColor{
+                border: 3px solid #318892;
+            }
+
+            .color-red{
+                background-color: red;
+            }
+            .color-blue{
+                background-color: #316092;
+            }
+            .color-orange{
+                background-color: orange;
+            }
+            .color-black{
+                background-color: black;
+            }
+            .color-green{
+                background-color: green;
+            }
+            .color-yellow{
+                background-color: yellow;
+            }
+            .color-brown{
+                background-color: brown;
+            }
+            .color-pink{
+                background-color: pink;
+            }
+            .color-grey{
+                background-color: gray;
+            }
+
+
+        }
+
+        .sizes{
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+
+            .size{
+                width: 40px;
+                height: 40px;
+                border: 2px solid #999;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-transform: uppercase;
+                margin-right: 12px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .size.activeSize{
+                border: 3px solid #318892;
+            }
+        }
+
+        .quantity{
+            display: inline-flex;
+            align-items: center;
+            border: var(--main-border);
+            font-size: 13px;
+            margin-bottom: 24px;
+
+            span{
+                padding: 4px 24px;
+                margin: 0;
+            }
+
+            svg{
+                padding: 4px 6px;
+                cursor: pointer;
+
+                &:nth-child(1){
+                    border-right: var(--main-border);
+                }
+                &:nth-child(3){
+                    border-left: var(--main-border);
+                }
+            }
+        }
+
+        .box-btn{
+            display: flex;
+            align-items: center;
+
+            @media (max-width:600px) {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                z-index: 99;
+            }
+        }
+
+        .submit{
+            width: unset;
+            background-color: #318892;
+            color: var(--white);
+            font-size: 14px;
+            padding: 10px 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            margin-right: 12px;
+
+            @media (max-width:600px) {
+                flex: 1;
+                margin: 0;
+                border: none;
+                justify-content: center;
+                padding: 12px;
+
+                &:nth-child(1){
+                    border-right: 2px solid #25666d;
+                }
+            }
+
+            svg{
+                color: var(--white);
+                font-size: 14px;
+            }
+
+            &:hover{
+                background-color: #25666d;
+                transition: 0.5s;
+            }
+        }
+
+    }
+}

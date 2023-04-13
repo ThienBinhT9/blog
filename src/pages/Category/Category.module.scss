@@ -1,0 +1,34 @@
+.wrapper{
+
+    .archive-head{
+        border: var(--main-border);
+        padding: 34px 35px;
+        background-color: #fafafa;
+        text-align: center;
+        text-transform: uppercase;
+
+        .sub-title{
+            font-size: 11px;
+            letter-spacing: 2px;
+            color: #f1868a;
+            font-weight: 500;
+        }
+
+        .title{
+            margin-top: 10px;
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 1;
+            color: #222222;
+            letter-spacing: 1px;
+        }
+    }
+
+    .content{
+        margin-top: 65px;
+
+        .content__postItem{
+            margin-bottom: 65px;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.grid{
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.grid.wide{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+//tablet
+@media (min-width:740px) and (max-width:1023px) {
+    .wide{
+        width: 644px;
+    }
+}
+
+//PC solution
+@media (min-width:1024px) and (max-width:1239px){
+    .wide{
+        width: 984px;
+    }
+}
+
+@media (max-width:740px) {
+    .grid.wide{
+        width: 93%;
+        margin: 0 auto;
+    }
+}

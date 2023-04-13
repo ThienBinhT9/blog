@@ -1,0 +1,134 @@
+.wrapper{
+
+    .header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 25px;
+
+        .title{
+            font-size: 26px;
+            color:#161616;
+            margin: 18px 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .date{
+            color: var(--color-date);
+            font-size: 12px;
+
+            span{
+
+                &:nth-child(2){
+                    color: #161616;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+
+    .imagePost{
+        padding-top: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 26px;
+    }
+
+    .desc{
+        color: #666666;
+        font-size: 16px;
+        margin-bottom: 35px;
+        line-height: 1.7;
+    }
+
+    .btn{
+        text-align: center;
+        color: #161616;
+        font-weight: 600;
+        font-size: 11px;
+        letter-spacing: 3px;
+        display: inline-block;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .actions{
+        margin-top: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: var(--main-border);
+        border-bottom: var(--main-border);
+        height: 43px;
+
+        .anthor{
+            display: flex;
+            align-items: center;
+
+            span{
+                color: #B4B4B4;
+                font-size: 11px;
+
+                &:nth-child(2){
+                    color: #F1868A;
+                    letter-spacing: 1px;
+                    font-weight: 600;
+                    padding: 0;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        
+    }
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+
+    .like{
+        margin-right: 36px;
+        display: flex;
+        align-items: center;
+        color: #606060;
+        cursor: pointer;
+
+        .active{
+            transition: 0.5s;
+            color: #F1868A;
+        }
+    }
+
+    .contact{
+        display: flex;
+        align-items: center;
+        padding-left: 32px;
+        position: relative;
+        height: 100%;
+
+        &::before{
+            position: absolute;
+            left: 0;
+            content: "";
+            height: 200%;
+            width: 1px;
+            background-color: #ebebeb;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+
+        .icon{
+            padding: 0;
+        }
+        
+        svg{
+            font-size: 13px;
+            color: #494949;
+        }
+    }
+}

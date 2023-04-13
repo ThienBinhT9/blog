@@ -1,0 +1,25 @@
+.aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: var(--main-border);
+    border-top: 1px solid #F1868A;
+
+}
+
+.aboutme__title{
+    font-size: 12px;
+    color: #1A1A1A;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: var(--main-border);
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.aboutme__content{
+    padding: 30px;
+}
